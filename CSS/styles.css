@@ -120,6 +120,7 @@ img {
 
 .header-icon {
     margin-right: 10px;
+    fill: currentColor;
 }
 
 .contacts {
@@ -134,16 +135,22 @@ img {
     fill: #757575;
 }
 
-.header-soc-info:hover .contacts,
+.header-soc-info:hover .contacts, 
 .header-soc-info:focus .contacts {
     color: #2196F3;
 }
 
-.header-soc-info:hover .contacts,
-.header-soc-info:focus .contacts {
+.header-soc-info:hover .header-icon,
+.header-soc-info:focus .header-icon{
     fill: #2196F3;
 }
 
+.header-icon:hover,
+.header-icon:focus,
+.contacts:hover,
+.contacts:focus {
+    color: #2196F3;
+}
 
 /*Унікальний контент*/
 
@@ -217,8 +224,8 @@ img {
     justify-content: center;
     margin-bottom: 30px;
     background-color: #F5F4FA;
-    border-radius: 4px;
 }
+
 
 .main-list {
     display: flex;
@@ -327,22 +334,10 @@ img {
     justify-content: center;
 } 
 
-.team-soc-ikon {
-    fill: #AFB1B8;
-}
-
-.team-soc-ikon:hover,
-.team-soc-ikon:focus {
-    fill: #2196F3;
-}
-
 .team-soc-link:hover,
-.team-soc-link:focus{
-    background-color: #2196F3;
-}
-
-.team-soc-link:hover .team-soc-ikon{
-    fill: #FFFFFF;
+.team-soc-link:focus {
+  fill: #FFFFFF;
+  background-color:#2196F3;
 }
 
 .team-soc-link {
@@ -352,11 +347,14 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    fill: #afb1b8;
 }
 
 .team-soc-item + .team-soc-item {
     margin-left: 10px;
 }
+
+/*Постійні клієнти*/
 
 .client-section {
     padding-top: 94px;
@@ -384,23 +382,26 @@ img {
     align-items: center;
     justify-content: center;
     border: 1px solid #afb1b8;
+    border-radius: 4px;
     color: #afb1b8;
     background-color: #fff;
     padding: 16px 32px;
 }
 
-.client-icon{
-    fill: #AFB1B8;
-} 
-
-.client-icon:hover,
-.client-icon:focus {
-    fill: #2196F3;
-}  
-
 .client-link:hover,
 .client-link:focus {
-  border-color: #2196F3 ;
+  color: #2196F3 ;
+  border-color: #2196F3;
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
+.client-item:hover,
+.client-item:focus {
+  color: #2196F3;
+  border-color: #2196F3;
 }
 
 /*Підвал сторінки*/
